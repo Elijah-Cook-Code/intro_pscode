@@ -2,3 +2,124 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+version_1 
+
+randit 1, 10 = num_to_guess
+print ("ive got my number, now you have three tries to figure it out)
+player input 1 guess 
+if player guess == num_to_guess 
+print (you nailed it)
+else 
+print (try again please)
+repeat 3 times 
+if not guessed in three times 
+print (wow really you didnt get it, huh oh well. Wanna try again)
+offer player option to start over if they did not guess in the threee tries
+
+version_2 
+
+(variables)
+
+randit (1, 10) = random_num
+random_num = num_to_guess
+attempts = 3 
+
+(main_loop)
+
+attempts in range of 3 
+	player_guess = input() players guess here
+	if player_guess == num_to_guess
+		print("you nailed it!")
+		
+	else
+		if attempt is lower than 3 
+			print("Try again, please!")
+		else
+			print("Wow really? You did't get it huh? oh well want to try again?")
+
+if the player did not guess it offer them the chance to try again
+	if yes 
+		print ("lets play again")
+		run game again
+	if no 
+		print ("I guess its cool, if you dont wanna play again")
+
+version_3 
+(real code)
+
+import random
+
+def guessing_game():
+    # (variables)
+    random_num = random.randint(1, 10)  # Generates a random number between 1 and 10
+    num_to_guess = random_num
+    attempts = 3  # Number of allowed attempts
+
+    # (main_loop)
+    for attempt_num in range(attempts):
+        player_guess = int(input(f"Attempt {attempt_num + 1}: Enter your guess (1-10): "))
+
+        if player_guess == num_to_guess:
+            print("You nailed it!")
+            break
+        else:
+            if attempt_num < attempts - 1:
+                print("Try again, please!")
+            else:
+                print("Wow, really? You didn't get it, huh? Oh well, want to try again?")
+    
+    # Prompt the player to play again after a win or loss
+    play_again = input("Do you want to play again? (yes/no): ").lower()
+
+    if play_again == 'yes':
+        print("Let's play again!")
+        guessing_game()  # Recursively call the function to restart the game
+    else:
+        print("I guess it's cool if you don't wanna play again.")
+
+# Start the game
+guessing_game()
+
+break_down
+
+(module imported)
+import random
+what that did what pull the random module from python, to help pick a random number 
+
+(function)
+def guessing_game(): 
+this created a function which I can call during the program to start the game when needed. what I did next was described the function
+
+(function logic)
+random_num = random.randint(1, 10)
+this uses the random module to generate the random number and places it into a varaible called random number to be called when needed through out the program
+num_to_guess = random_num 
+this takes the the random number to be guessed and assigns it to a new variable called random_num 
+attempts = 3 
+this assigns the amount of attempts the player has to try to guess the number 
+
+(main loop aka program logic)
+
+for attempts_num in range(attepmts)
+creates a loop that runs until it hits the 3rd attempt that the player has entered, making sure the variable attempts_num is under or equal to 3 the assign number for that variable 
+
+player_guess = int(input(f"Attempt {attempt_num + 1}: Enter your guess (1-10): "))
+this one was a little complicated to figure out but I created a variable called player guess which will find the attempt and take the users guess for that attempt, where it prompts 
+the user to input their guess. So starting with input() this asks for the users guess and checks for what attempt they are on, it uses an f- string which i learned about and what it 
+does is allows you enter in expressions and variables directly into a string like the attempt number in this situation, then it will print it out as a normal string for whoever is 
+running the program if told to, this is all inside the int() and what this does is take everything in it and converts the f-string it to an integer, so in here I took the f-string 
+asking for the players guess and findind the players attempt number and then coverts it to and integer that the computer can do something with and showes the player the attempt they 
+are on
+
+if player_guess == num_to_guess:
+
+notes: got pretty far on this one, spent alot of time here looking into this and trying to get this into actual code I know it didnt need to but was having fun.
+
+
+
+
+
+
+
+
+	

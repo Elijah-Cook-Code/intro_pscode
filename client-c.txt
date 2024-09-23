@@ -2,3 +2,49 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+(version 1) 
+
+package_filled = 50 
+scan_thing = +2 to count_total 
+count_total = scan_thing 
+starting_num = 0 
+
+def scan_it_boi():
+	while True:
+		if count_total <= 50:
+		count_total += starting_num +2 
+		print(count_total)
+
+		if count_total == 50 
+		print(youve reached the total room for items)
+		print(starting_num)
+		break 
+
+loop:
+
+print(starting_num)
+
+	scan_it_boi
+
+(version 2)
+
+package_filled = 50 
+count_total = 0 
+
+def scan_it_boi():
+	while True:
+		if count_total < package_filled:
+		count_total += 2 
+		print(count_total)
+
+		if count_total == package_filled:
+			print("by golly youve done it!")
+			break
+
+print(count_total) 
+scan_it_boi
+
+notes: this one was much easier for me to wrap my head around, Ive worked with python quite alot and this is something I have had experience with on occasion
+
+
+

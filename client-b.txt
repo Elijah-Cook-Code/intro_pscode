@@ -2,3 +2,45 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+version 1 
+
+item_location = ( , )
+cutomer_location = ( , )
+route_to_item = directions to item_location from customer location 
+
+def get_direction_input(next_step):
+	while true:
+		confirmation = intput( "please move (next_step) and enter yes once you have moved")
+	if confirmation == "yes"
+		move to the next step
+	else:
+		print("have you moved")
+  
+
+loop:
+
+	print("your item location is ______")
+	print("you are here, customer_location ")
+	route_to_item = [north, south, east, west]
+	print(route_to_item)
+	prompt user to follow route in order
+	
+	next_step in route_to_item:
+		print("next, go (next_step)")
+		get_direction_input(next_step)
+		
+	if user goes to far one direction noitify them  
+
+	customer_location and compare to the item_location 
+	
+	if customer_location == item_location 
+		print(you should see your item)
+		break (end program)
+		if customer_location not == item_location  
+			print(route_to_item) 
+		else 
+			print(check your directions)
+	
+	if customer_location is outside store boundries: 
+		print("you seem to have left the store somehow please come inside and try again")
+
